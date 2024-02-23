@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int
+main ()
+{
+
+  int n, nums[100000];
+  cin >> n;
+  for (int i = 0; i < n; i++)
+	{
+	  cin >> nums[i];
+	}
+  for (int i = 0; i < n; i++)
+	{
+	  for (int j = i + 1; j < n; j++)
+		{
+		  if (nums[i] == nums[j])
+			cout << "true";
+		  if (nums[i] != nums[j])
+			cout << "false";
+		  break;
+		}
+	  break;
+	}
+  return 0;
+}
